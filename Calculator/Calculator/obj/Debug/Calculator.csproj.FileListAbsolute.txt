@@ -1,0 +1,10 @@
+F:\github\calculator-HoangYen2810\Calculator\Calculator\bin\Debug\Calculator.exe.config
+F:\github\calculator-HoangYen2810\Calculator\Calculator\bin\Debug\Calculator.exe
+F:\github\calculator-HoangYen2810\Calculator\Calculator\bin\Debug\Calculator.pdb
+F:\github\calculator-HoangYen2810\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+F:\github\calculator-HoangYen2810\Calculator\Calculator\obj\Debug\Calculator.frmCalculator.resources
+F:\github\calculator-HoangYen2810\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+F:\github\calculator-HoangYen2810\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.Cache
+F:\github\calculator-HoangYen2810\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+F:\github\calculator-HoangYen2810\Calculator\Calculator\obj\Debug\Calculator.exe
+F:\github\calculator-HoangYen2810\Calculator\Calculator\obj\Debug\Calculator.pdb
