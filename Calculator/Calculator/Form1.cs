@@ -86,9 +86,55 @@ namespace Calculator
                 case '9':
                     NhapSo("" + e.KeyChar);
                     break;
+                case '+':
+                    btnCong.PerformClick();
+                    break;
+                case '-':
+                    btnTru.PerformClick();
+                    break;
+                case '*':
+                    btnNhan.PerformClick();
+                    break;
+                case '/':
+                    btnChia.PerformClick();
+                    break;
+                case '=':
+                    btnBang.PerformClick();
+                    break;
+                default:
+                    break;
 
+
+            }
+
+        }
+
+        private void btnCan_Click(object sender, EventArgs e)
+        {
+            lblHienThi.Text = (Math.Sqrt(Double.Parse(lblHienThi.Text))).ToString();
+        }
+
+        private void btnDoiGiau_Click(object sender, EventArgs e)
+        {
+            lblHienThi.Text = (-1 * (double.Parse(lblHienThi.Text))).ToString();
+        }
+
+        private void btnPhanTram_Click(object sender, EventArgs e)
+        {
+            lblHienThi.Text = ((double.Parse(lblHienThi.Text) / 100)).ToString();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+           
+            string a = lblHienThi.Text.ToString();
+
+        }
+
+     
             }
         }
     }
-}
+    }
+
 

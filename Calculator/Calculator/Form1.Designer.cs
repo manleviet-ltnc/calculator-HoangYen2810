@@ -167,6 +167,7 @@
             this.btnPhanTram.TabIndex = 4;
             this.btnPhanTram.Text = "%";
             this.btnPhanTram.UseVisualStyleBackColor = true;
+            this.btnPhanTram.Click += new System.EventHandler(this.btnPhanTram_Click);
             // 
             // btn4
             // 
@@ -221,6 +222,7 @@
             this.btnCan.TabIndex = 9;
             this.btnCan.Text = "√";
             this.btnCan.UseVisualStyleBackColor = true;
+            this.btnCan.Click += new System.EventHandler(this.btnCan_Click);
             // 
             // btn1
             // 
@@ -275,6 +277,7 @@
             this.btnDoiGiau.TabIndex = 14;
             this.btnDoiGiau.Text = "±";
             this.btnDoiGiau.UseVisualStyleBackColor = true;
+            this.btnDoiGiau.Click += new System.EventHandler(this.btnDoiGiau_Click);
             // 
             // btn0
             // 
@@ -306,6 +309,7 @@
             this.btnNho.TabIndex = 1;
             this.btnNho.Text = "C";
             this.btnNho.UseVisualStyleBackColor = true;
+            this.btnNho.Click += new System.EventHandler(this.btnNho_Click);
             // 
             // btnXoa
             // 
@@ -316,6 +320,7 @@
             this.btnXoa.TabIndex = 2;
             this.btnXoa.Text = "Backspace";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnBang
             // 
