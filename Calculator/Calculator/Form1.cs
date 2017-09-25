@@ -126,15 +126,16 @@ namespace Calculator
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-           
-            string a = lblHienThi.Text.ToString();
-
+            if (lblHienThi.Text.Length > 0)
+                lblHienThi.Text = lblHienThi.Text.Remove(lblHienThi.Text.Length - 1, 1);
         }
 
-     
-            }
+        private void btnNho_Click(object sender, EventArgs e)
+        {
+            nho = 0;
+            lblHienThi.ResetText();
         }
     }
-    }
+        }
 
 
