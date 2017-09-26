@@ -48,8 +48,8 @@
             this.btnDoiGiau = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
             this.btnThapPhan = new System.Windows.Forms.Button();
-            this.btnNho = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnXoaHet = new System.Windows.Forms.Button();
+            this.btnXoaMotKiTu = new System.Windows.Forms.Button();
             this.btnBang = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -300,27 +300,27 @@
             this.btnThapPhan.Text = ".";
             this.btnThapPhan.UseVisualStyleBackColor = true;
             // 
-            // btnNho
+            // btnXoaHet
             // 
-            this.btnNho.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNho.Location = new System.Drawing.Point(15, 83);
-            this.btnNho.Name = "btnNho";
-            this.btnNho.Size = new System.Drawing.Size(94, 45);
-            this.btnNho.TabIndex = 1;
-            this.btnNho.Text = "C";
-            this.btnNho.UseVisualStyleBackColor = true;
-            this.btnNho.Click += new System.EventHandler(this.btnNho_Click);
+            this.btnXoaHet.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaHet.Location = new System.Drawing.Point(15, 83);
+            this.btnXoaHet.Name = "btnXoaHet";
+            this.btnXoaHet.Size = new System.Drawing.Size(94, 45);
+            this.btnXoaHet.TabIndex = 1;
+            this.btnXoaHet.Text = "C";
+            this.btnXoaHet.UseVisualStyleBackColor = true;
+            this.btnXoaHet.Click += new System.EventHandler(this.btnXoaHet_Click);
             // 
-            // btnXoa
+            // btnXoaMotKiTu
             // 
-            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(123, 83);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(149, 45);
-            this.btnXoa.TabIndex = 2;
-            this.btnXoa.Text = "Backspace";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            this.btnXoaMotKiTu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaMotKiTu.Location = new System.Drawing.Point(123, 83);
+            this.btnXoaMotKiTu.Name = "btnXoaMotKiTu";
+            this.btnXoaMotKiTu.Size = new System.Drawing.Size(149, 45);
+            this.btnXoaMotKiTu.TabIndex = 2;
+            this.btnXoaMotKiTu.Text = "Backspace";
+            this.btnXoaMotKiTu.UseVisualStyleBackColor = true;
+            this.btnXoaMotKiTu.Click += new System.EventHandler(this.btnXoaMotKiTu_Click);
             // 
             // btnBang
             // 
@@ -339,8 +339,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(287, 351);
             this.Controls.Add(this.btnBang);
-            this.Controls.Add(this.btnNho);
-            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnXoaHet);
+            this.Controls.Add(this.btnXoaMotKiTu);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.lblHienThi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -358,9 +358,9 @@
 
         private System.Windows.Forms.Label lblHienThi;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button btnNho;
+        private System.Windows.Forms.Button btnXoaHet;
         private System.Windows.Forms.Button btnChia;
-        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnXoaMotKiTu;
         private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.Button btn8;
         private System.Windows.Forms.Button btn9;

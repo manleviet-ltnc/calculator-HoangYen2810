@@ -17,7 +17,7 @@ namespace Calculator
             InitializeComponent();
         }
         bool isTypingNumber = false;
-        enum PhepToan { Cong, Tru, Nhan, Chia };
+        enum PhepToan { None, Cong, Tru, Nhan, Chia };
         PhepToan pheptoan;
         double nho;
         private void NhapSo(object sender, EventArgs e)
@@ -38,7 +38,8 @@ namespace Calculator
         }
         private void NhapPhepToan(object sender, EventArgs e)
         {
-            TinhKetQua();
+            if (nho!=0)
+                 TinhKetQua();
             Button btn = (Button)sender;
             switch (btn.Text)
             {
@@ -68,6 +69,8 @@ namespace Calculator
         {
             TinhKetQua();
             isTypingNumber = false;
+            nho = 0;
+            pheptoan = PhepToan.None;
         }
 
         private void frmCalculator_KeyPress(object sender, KeyPressEventArgs e)
@@ -124,18 +127,20 @@ namespace Calculator
             lblHienThi.Text = ((double.Parse(lblHienThi.Text) / 100)).ToString();
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
+        private void btnXoaMotKiTu_Click(object sender, EventArgs e)
         {
-            if (lblHienThi.Text.Length > 0)
-                lblHienThi.Text = lblHienThi.Text.Remove(lblHienThi.Text.Length - 1, 1);
+            if (lblHienThi.Text != "")
+                lblHienThi.Text = (lblHienThi.Text).Substring(0, lblHienThi.Text.Length - 1);
         }
 
-        private void btnNho_Click(object sender, EventArgs e)
+        private void btnXoaHet_Click(object sender, EventArgs e)
         {
             nho = 0;
-            lblHienThi.ResetText();
+            lblHienThi.Text = "0.";
         }
     }
-        }
+    }
+    
+
 
 
