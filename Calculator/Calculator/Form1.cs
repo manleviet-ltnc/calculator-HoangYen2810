@@ -28,13 +28,20 @@ namespace Calculator
         }
         private void NhapSo(string so)
         {
-            if (isTypingNumber)
-                lblHienThi.Text = lblHienThi.Text + so;
-            else
             {
-                lblHienThi.Text = so;
-                isTypingNumber = true;
+                if (isTypingNumber)
+                {
+                    if (lblHienThi.Text == "0")
+                        lblHienThi.Text = "";
+                    lblHienThi.Text =lblHienThi.Text + so;
+                }
+                else
+                {
+                    lblHienThi.Text = so;
+                    isTypingNumber = true;
+                }
             }
+
         }
         private void NhapPhepToan(object sender, EventArgs e)
         {
@@ -129,14 +136,33 @@ namespace Calculator
 
         private void btnXoaMotKiTu_Click(object sender, EventArgs e)
         {
-            if (lblHienThi.Text != "")
-                lblHienThi.Text = (lblHienThi.Text).Substring(0, lblHienThi.Text.Length - 1);
+            if (lblHienThi.Text.Length > 0)
+                lblHienThi.Text = lblHienThi.Text.Remove(lblHienThi.Text.Length - 1, 1);
+            if (lblHienThi.Text == "")
+            {
+                lblHienThi.Text = "0.";
+            }           
+
         }
 
         private void btnXoaHet_Click(object sender, EventArgs e)
         {
             nho = 0;
             lblHienThi.Text = "0.";
+        }
+
+        private void btnThapPhan_Click(object sender, EventArgs e)
+        {
+            if (lblHienThi.Text.Contains("."))
+            {
+                if (lblHienThi.Text == "0.")
+                {
+                    lblHienThi.Text = "";
+                    NhapSo("0.");
+                }
+                return;
+            }
+            lblHienThi.Text = lblHienThi.Text + ".";
         }
     }
     }

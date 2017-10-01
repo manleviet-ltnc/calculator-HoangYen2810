@@ -299,6 +299,7 @@
             this.btnThapPhan.TabIndex = 16;
             this.btnThapPhan.Text = ".";
             this.btnThapPhan.UseVisualStyleBackColor = true;
+            this.btnThapPhan.Click += new System.EventHandler(this.btnThapPhan_Click);
             // 
             // btnXoaHet
             // 
@@ -309,7 +310,6 @@
             this.btnXoaHet.TabIndex = 1;
             this.btnXoaHet.Text = "C";
             this.btnXoaHet.UseVisualStyleBackColor = true;
-            this.btnXoaHet.Click += new System.EventHandler(this.btnXoaHet_Click);
             // 
             // btnXoaMotKiTu
             // 
